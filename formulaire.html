@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vérifier les saisies de formulaire</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      text-align: center;
+      margin-top: 30px;
+background: url("karsten-winegeart-eGSBVVtVCCw-unsplash.jpg ")no-repeat center center fixed;
+background-size: cover;
+    
+      font-size: 20px;
+      color: black;
+     
+      
+    }
+   
+    .btn {
+      border-radius: 20px;
+      margin-right: 8px;
+      margin-left: 10px;
+      margin-top: 18px;
+      height: 45px;
+      cursor: pointer;
+      color: black;
+      background-color:bisque;
+    }
+    .btn:hover {
+      color: white;
+      background-color: gold;
+    }
+    .heh{
+      border: 2px solid black;
+      border-radius: 20px;
+      height: 100%;
+ 
+     
+      
+}
+.lel {
+  margin-right: 40px;
+}
+    }
+  </style>
+  <script type="text/javascript">
+    function verif_formulaire() {
+      if (document.formulaire.nom1.value == "") {
+        alert("Veuillez entrer votre nom!");
+        document.formulaire.nom1.focus();
+        return false;
+      }
+      if (document.formulaire.email.value == "") {
+        alert("Veuillez mettre l'@!");
+        document.formulaire.email.focus();
+        return false;
+      }
+      if (document.formulaire.email.value.indexOf('@') == -1) {
+        alert("Veuillez mettre l'@!");
+        document.formulaire.email.focus();
+        return false;
+      }
+      if (document.formulaire.password.value == "") {
+        alert("Veuillez entrer votre mot de passe!");
+        document.formulaire.password.focus();
+        return false;
+      }
+      if (document.formulaire.age.value == "") {
+        alert("L'age doit être un nombre!");
+        document.formulaire.age.focus();
+        return false;
+      }
+      var chkZ = 1;
+      for (i = 0; i < document.formulaire.age.value.length; ++i) {
+        if (document.formulaire.age.value.charAt(i) < "1" || document.formulaire.age.value.charAt(i) > "99") {
+          chkZ = -1;
+        }
+      }
+      if (chkZ == -1) {
+        alert("votre age n'est pas correcte veuillez mettre un nombre !!!");
+        document.formulaire.age.focus();
+        return false;
+      }
+      
+    }
+  </script>
+</head>
+<body bgcolor="#EEEEEE" text="#000000">
+
+<a href="mon site web.html"><img src="Gold's_Gym_logo.svg.png" height="90px" width="90px" style="position: fixed; top: 10px; left: 10px;" ></a>
+  <form name="formulaire" action="formul.php" method="post" onsubmit="return verif_formulaire(); " style="left: 530px; position: absolute;" class="heh">
+    <h1 style="color: bisque;">Enregistrer Vous!</h1>
+    <pre class="lel">
+      <div class="words"><strong>Nom:</strong></div>
+      <input type="text" size="40" name="nom1" class="textbx"><br>
+      <div class="words"><strong>Prenom:</strong></div>
+      <input type="text" size="40" name="nom2" class="textbx"><br>
+      <div class="words"><strong>E-mail:</strong></div>
+      <input type="text" size="40" name="email" class="textbx"><br>
+      <div class="words"><strong>Mot de passe:</strong></div>
+      <input type="password" size="40" name="password" class="textbx" visib >
+
+      <form></form>
+      <input type="radio" id="tb1" name="fav_language" value="tb1"> <img src="hehe.png" height="50px" width="100" ><input type="radio" id="tb2" name="fav_language" value="tb2"><img src="newcard.png" height="50px" width="100" >
+      <input type="submit" value="Envregistrer" class="btn">    <input type="reset" value="Tout enlever" class="btn">
+   
+    </pre>
+  </form>
+ 
+</body>
+</html>
