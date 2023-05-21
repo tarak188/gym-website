@@ -1,0 +1,170 @@
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+  }
+  h1{
+    text-align: right;
+    white-space: nowrap;
+  
+  }
+  body, html {height: 100%;}
+  body {
+    background: url("lolol.jpg") no-repeat center center fixed;
+    background-size: cover;
+    line-height: 1.6; /* ma3neha tkhali chwaya space binet stour */
+   
+    
+  }
+  .ul1 ul {
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
+    background-color: #333;
+  left: 340px;
+  top: 370px;
+    position: fixed;
+  
+  }
+  
+  .ul1 li {
+    display: inline;
+    background-color: black;
+  
+  font-size: 30px;
+  float:right;
+  
+  }
+  .ul1 li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px; /*tba3ed link 3la b3athom */
+    text-decoration: none; /* kif teclicki 3la link yathhhar star melouta which make it ugly so hethi mat5alihech      */
+  }
+  .ul1 li a:hover{
+    background-color: wheat;
+  }
+  .active
+  {
+    background-color:goldenrod;
+  }
+  .grind {
+    font-size: 35px;
+    color: white;
+  position: absolute;
+  left: 20px;
+  top: 50px;
+   opacity: 0.7;
+   width: 440px;
+   border-radius: 20px;
+  
+   
+  }
+  span {
+  
+    font-size: 40px;
+  color: white;
+  background-color: gold;
+  }
+  p{
+    color: white;
+  }
+  .button1
+  {
+  
+  background-color: red;
+  color: white;
+  font-size: larger;
+  
+  top: 70%;
+         left:40%;
+        height: 55px;
+        
+         position: absolute;
+         color:white;
+         cursor:pointer;
+         border-radius: 20px;
+         
+         box-shadow: 5px 10px black;
+         
+  
+  
+  }
+  a {text-decoration: none;
+    color: white;
+  }
+  a:hover { color: gold;
+    
+    
+  
+  }
+  .button1:hover{
+    background-color: white;
+    animation-name: bounce;
+      animation-timing-function: ease;
+    
+  }
+  
+  
+  
+  .footer {
+  
+    padding: 3px;
+    text-align: center;
+    
+  
+    position: absolute;
+    bottom: 2px;
+    right: 30px;
+    border: 2px solid black;
+   
+  }
+  .footer p {
+  color: black;
+  
+  
+  }
+  .footer a{
+  
+    text-decoration: none
+  
+  }
+  
+  
+  
+  nav{
+  background-color: gold;
+  padding: 20px;
+  color:black;
+  font-size: 40px;
+  text-align: center;
+  
+  }
+  .bouton button:hover{
+  background-color:black;
+  
+  
+  }
+  .gld {
+  position: absolute;
+  left: 90px;
+  top: 12px;
+  
+  
+  }
+  .ul2 {
+    position: absolute;
+   
+   
+    bottom: 80px;
+  left: 420px;
+  
+  
+  
+  }
+  .kk{
+  font-size: 20px;
+  
+  
+  }

@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    margin-top: 30px;
+background: url("karsten-winegeart-eGSBVVtVCCw-unsplash.jpg ")no-repeat center center fixed;
+background-size: cover;
+  
+    font-size: 20px;
+    color: black;
+   
+    
+  }
+ 
+  .btn {
+    border-radius: 20px;
+    margin-right: 8px;
+    margin-left: 10px;
+    margin-top: 18px;
+    height: 45px;
+    cursor: pointer;
+    color: black;
+    background-color:bisque;
+  }
+  .btn:hover {
+    color: white;
+    background-color: gold;
+  }
+  .heh{
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 100%;
+
+   
+    
+}
+.lel {
+margin-right: 40px;
+}
